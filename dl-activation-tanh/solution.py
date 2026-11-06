@@ -16,5 +16,5 @@ def tanh_backward(grad_output: np.ndarray, output: np.ndarray) -> np.ndarray:
     Returns:
         dL/dx = grad_output * (1 - output^2).
     """
-    return grad_output * (1 - output * output)
+    return grad_output * (1 - output **2)
     pass
